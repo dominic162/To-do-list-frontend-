@@ -1,0 +1,83 @@
+body{
+    margin:0 0;
+    padding: 0 0;
+    background-color: #2e2d2d;
+}
+#main{
+    margin-top: 25px;
+}
+#input-field{
+    margin: 20px 5px;
+    border-width: 0 0;
+    border-radius: 5px;
+    background-color: rgb(250, 255, 175);
+    font-size: large;
+    height: 40px;
+    width: 300px;
+    outline: none;
+    cursor: text;
+}
+#submit{
+    outline:none;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 50%;
+    font-size: x-large;
+    height: 40px;
+    border-width: 0 0;
+    cursor: pointer;
+}
+.other{
+    text-align: center;
+    display: block;
+    margin-right: 5px;
+
+}
+ul{
+    list-style-type: none;
+}
+li{
+    font-size:19px;
+    font-family: monospace;
+    padding: 10px;
+    border-radius: 5px;
+    height: auto;
+    background-color: rgb(250, 255, 175);
+    margin:10px 0;
+    width: 300px;
+}
+@media(min-width:416px){
+    #main{
+        display:grid;
+        grid-template-columns: 50vw 50vw;
+        grid-template-areas: 'adding displaying';
+    }
+    #adding{
+        grid-area:adding;
+    }
+    #displaying{
+        grid-area: displaying;
+    }
+}
+#adding{
+    margin: 0 0;
+    padding: 0 0;
+    font-size: 19px;
+    font-family: monospace;
+    align-items: center;
+}
+#displaying{
+    font-family:monospace;
+}
+@media (max-width:415px){
+    #main{
+        display:block;
+    }
+    #adding{
+        display:block;
+    }
+    #displaying{
+        display:block;
+
+    }
+}
